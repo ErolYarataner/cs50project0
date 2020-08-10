@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a style="padding-left: 80%; margin-right: 20px;" href="index.html"> Search Page </a>
+        <form style="padding-left: 70px; padding-top: 100px;" action="https://google.com/search">
+            <label for="allthese"> Find pages with… “all these words:” </label>
+            <input style="margin-left: 65px;" type="text" id="allthese" name="as_q"><br><br>
+            <label for="exactphrase"> Find pages with… “this exact word or phrase:” </label>
+            <input type="hidden" id="exactphrase" name="as_q" value="">
+            <input type="text" name="as_epq"><br><br>
+            <label for="anywords"> Find pages with… “any of these words:” </label>
+            <input type="hidden" id="anywords" name="as_q" value="">
+            <input type="hidden" id="anywords" name="as_epq" value="">
+            <input style="margin-left: 40px;" type="text" name="as_oq"><br><br>
+            <label for="nonewords"> Find pages with… “none of these words:” </label>
+            <input type="hidden" id="nonewords" name="as_q" value="">
+            <input type="hidden" id="nonewords" name="as_epq" value="">
+            <input type="hidden" id="nonewords" name="as_oq" value="">
+            <input style="margin-left: 32px;" type="text" name="as_eq">
+            <input style="margin-top: 10px;margin-right:20%;background-color: blue;color: white;" type="submit" value="Advanced Search">
+        </form>
+    </body>
+</html>
